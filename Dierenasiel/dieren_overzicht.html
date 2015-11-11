@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Dieren dieren dieren!</title>
+</head>
+<body>
+<a href="Index.html"> <img src="index_header_picture.gif" height="250" width="300"/></a>
+<h1>Dieren dieren dieren</h1>
+<h2>Links</h2>
+<ul>
+    <a href="https://nl.wikipedia.org/wiki/Hond"><li>Over honden</li></a>
+    <a href="https://nl.wikipedia.org/wiki/Kat_%28dier%29"><li>Over katten</li></a>
+</ul>
+<h2>Het overzicht van onze dieren</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Honden</th>
+    </tr>
+    <tr>
+        <th>Naam</th>
+        <th>Leeftijd</th>
+        <th>Reg. Nr.</th>
+        <th>Gereserveerd</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><b>Sallie</b></td>
+        <td>10</td>
+        <td>1039438</td>
+        <td>Ja</td>
+    </tr>
+    <tr>
+        <td><b>Puk</b></td>
+        <td>5</td>
+        <td>4465564</td>
+        <td>Nee</td>
+    </tr>
+    </tbody>
+</table>
+<table>
+    <thead>
+    <tr>
+        <th>Katten</th>
+    </tr>
+    <tr>
+        <th>Naam</th>
+        <th>Leeftijd</th>
+        <th>Reg. Nr.</th>
+        <th>Gereserveerd</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><b>Vlekje</b></td>
+        <td>2</td>
+        <td>9842735</td>
+        <td>Ja</td>
+    </tr>
+    <tr>
+        <td><b>Harry</b></td>
+        <td>6</td>
+        <td>9784658</td>
+        <td>Nee</td>
+    </tr>
+    </tbody>
+</table>
+<p></p>
+<p></p>
+<h2>Dieren toevoegen</h2>
+<form>
+    <label for="naam">Naam</label>
+    <input type="text" id="naam"/>
+    <br/>
+    <label for="leeftijd">Leeftijd</label>
+    <input type="text" id="leeftijd" />
+    <br/>
+    <label for="regnr">Reg. Nr</label>
+    <input type="text" id="regnr" />
+    <br/>
+    <label for="gereserveerd">Gereserveerd</label>
+    <input type="text" id="gereserveerd" />
+    <br/>
+    <br/>
+    <label for="hond">Hond</label>
+    <input type="radio" name="dier" value="hond" id="hond"/>
+    <label for="kat">Kat</label>
+    <input type="radio" name="dier" value="kat" id="kat" />
+    <br />
+
+    <input type="submit" value="Toevoegen"/>
+</form>
+</body>
+</html>
