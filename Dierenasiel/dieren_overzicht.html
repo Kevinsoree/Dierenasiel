@@ -2,13 +2,16 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <link rel="stylesheet" href="style.css" /> 
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="code.js"></script>
     <meta charset="utf-8"/>
     <title>Dieren dieren dieren!</title>
 </head>
 <body>
 <a href="Index.html"> <img src="index_header_picture.gif" height="250" width="300"/></a>
-<h1>Dieren dieren dieren</h1>
+
+<h1><script>$("h1").addClass("title");</script> Dieren dieren dieren</h1>
 <h2>Links</h2>
 <ul>
     <a href="https://nl.wikipedia.org/wiki/Hond"><li>Over honden</li></a>
@@ -74,25 +77,26 @@
 <h2>Dieren toevoegen</h2>
 <form>
     <label for="naam">Naam</label>
-    <input type="text" id="naam"/>
+    <input type="text" id="name" />
+    <p id="pop-up_name" class="hidden"></p>
     <br/>
-    <label for="leeftijd">Leeftijd</label>
-    <input type="text" id="leeftijd" />
+    <label for="age">Leeftijd</label>
+    <input type="text" id="age" />
     <br/>
     <label for="regnr">Reg. Nr</label>
-    <input type="text" id="regnr" />
+    <input type="text" id="regnr"/>
+    <p id="pop-up_regnr" class="hidden"></p>
     <br/>
-    <label for="gereserveerd">Gereserveerd</label>
-    <input type="text" id="gereserveerd" />
+    <label for="reserved">Gereserveerd</label>
+    <input type="text" id="reserved" />
     <br/>
     <br/>
     <label for="hond">Hond</label>
-    <input type="radio" name="dier" value="hond" id="hond"/>
+    <input type="radio" name="species" value="hond" id="hond"/>
     <label for="kat">Kat</label>
-    <input type="radio" name="dier" value="kat" id="kat" />
+    <input type="radio" name="species" value="kat" id="kat" />
     <br />
-
-    <input type="submit" value="Toevoegen"/>
+    <input type="submit" value="Submit" id="btn_submit"/>
 </form>
 </body>
 </html>

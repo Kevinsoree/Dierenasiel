@@ -80,3 +80,6 @@ button {
     background-color: #3366cc;
     color: #ffffff;
 }
+.hidden {    
+    display: inline-block;
+}
